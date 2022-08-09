@@ -1,6 +1,7 @@
-from abc import ABC
+from abc import ABCMeta
 
-class Battery(ABC):
+class Battery():
+    __metaclass__ = ABCMeta
     def needs_service(self):
         pass
 
